@@ -9,6 +9,12 @@ app.use(express.json());
 
 app.use("/api", atsRoutes);
 
-app.listen(5000, () => {
-  console.log("🚀 SkillScan ATS running on port 5000");
+app.get("/", (req, res) => {
+  res.send("SkillScan ATS Backend Running 🚀");
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 SkillScan ATS running on port ${PORT}`);
 });
