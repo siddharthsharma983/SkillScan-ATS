@@ -31,7 +31,7 @@ function App() {
       setResult(null);
 
       const res = await axios.post(
-        "http://localhost:5000/api/analyze",
+        "https://skillscan-ats.onrender.com/api/analyze",
         formData,
         { validateStatus: () => true },
       );
@@ -120,9 +120,7 @@ function App() {
       {result && !result.errorMessage && (
         <div className="result-card">
           <div className="score-circle">{result.atsScore}%</div>
-
           <p className="recommend">{result.message}</p>
-
           <p className="engine-name">Powered by {result.engine}</p>
         </div>
       )}
