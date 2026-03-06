@@ -1,17 +1,17 @@
-SkillScan ATS – FitSense Engine
+🚀 SkillScan ATS – FitSense Engine
 
 AI-powered resume analysis system that simulates real-world Applicant Tracking System (ATS) evaluation.
 
-Live Demo:
+🔗 Live Demo
 https://skill-scan-ats-coral.vercel.app
 
-Overview
+📌 Overview
 
 SkillScan ATS analyzes resumes against job descriptions and generates an ATS compatibility score.
 
 It helps candidates understand how well their resume matches a specific role before applying.
 
-Features
+✨ Features
 
 Resume Upload (PDF / TXT)
 
@@ -25,8 +25,7 @@ Real-time Analysis
 
 Fully Deployed Production Version
 
-Tech Stack
-
+🛠 Tech Stack
 Frontend
 
 React.js
@@ -43,7 +42,7 @@ Express.js
 
 Multer
 
-Custom scoring logic
+Custom Scoring Logic
 
 Deployment
 
@@ -51,15 +50,15 @@ Vercel (Frontend)
 
 Render (Backend)
 
-Architecture
+🏗 Architecture
 
 Frontend → API Call → Backend Processing → Keyword Matching → Score Generation → Response
 
-API
+🔗 API
 
 POST /api/analyze
 
-Form Data:
+Form Data
 
 resume
 
@@ -69,20 +68,26 @@ experienceLevel
 
 years (optional)
 
-Local Setup
+🖥 Local Setup
 Backend
 cd server
 npm install
 npm start
+
+Runs on: http://localhost:5000
+
 Frontend
 cd client
 npm install
 npm start
-Why This Project Matters
+
+Runs on: http://localhost:3000
+
+💡 Why This Project Matters
 
 Demonstrates full-stack architecture
 
-Shows real API integration
+Shows API integration
 
 Implements practical resume evaluation logic
 
