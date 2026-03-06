@@ -1,5 +1,3 @@
-.
-
 🚀 SkillScan ATS – FitSense Engine
 
 AI-Powered Resume Analysis System that simulates real-world Applicant Tracking System (ATS) evaluation logic.
@@ -170,3 +168,4 @@ It includes backend logic, scoring system, and real hosting setup.
 
 Siddharth Sharma
 Full Stack Developer
+
