@@ -1,31 +1,31 @@
+.
+
 🚀 SkillScan ATS – FitSense Engine
 
 AI-Powered Resume Analysis System that simulates real-world Applicant Tracking System (ATS) evaluation logic.
 
-🌐 Live Demo:
+🌐 Live Demo
 https://skill-scan-ats-coral.vercel.app
 
 📌 Project Overview
 
 SkillScan ATS is a full-stack web application designed to replicate how modern Applicant Tracking Systems evaluate resumes against job descriptions.
 
-The system analyzes uploaded resumes and calculates an ATS compatibility score using keyword matching logic and structured evaluation rules.
+The system:
 
-This project demonstrates:
+Analyzes uploaded resumes (PDF / TXT)
 
-Real-world full stack architecture
+Extracts job description keywords
 
-File handling & parsing
+Calculates ATS compatibility score
 
-API-based frontend-backend integration
+Provides structured recruiter-style feedback
 
-Production deployment setup
-
-Resume-to-role intelligent matching simulation
+This project demonstrates real-world deployment, API integration, and resume-to-role intelligent matching logic.
 
 🎯 Problem It Solves
 
-Most candidates don’t know whether their resume matches a job description before applying.
+Many candidates apply for jobs without knowing if their resume matches the job description.
 
 SkillScan ATS helps by:
 
@@ -35,44 +35,44 @@ Detecting keyword alignment
 
 Providing ATS compatibility score
 
-Giving structured feedback
+Generating structured feedback
 
-This simulates the first screening layer used by recruiters.
+It simulates the first screening layer used by recruiters.
 
-🧠 Core Logic
+🧠 Core Workflow
 
-Resume file is uploaded (.pdf / .txt)
+Resume file is uploaded
 
-Resume text is extracted
+Resume text is parsed
 
-Job description keywords are parsed
+Job description keywords are extracted
 
 Matching ratio is calculated
 
-Score is generated
+ATS score is generated
 
 Recommendation message is returned
 
-The scoring engine dynamically adjusts evaluation based on:
+Scoring dynamically adjusts based on:
 
 Fresher / Experienced mode
 
-Years of experience input
+Years of experience
 
 Keyword density comparison
 
 🛠 Tech Stack
-Frontend
+💻 Frontend
 
 React.js
 
 Axios
 
-Responsive UI with CSS
+Responsive CSS
 
-FormData-based file upload handling
+FormData-based file upload
 
-Backend
+⚙️ Backend
 
 Node.js
 
@@ -80,15 +80,15 @@ Express.js
 
 Multer (file handling middleware)
 
-Custom ATS scoring engine logic
+Custom ATS scoring engine
 
-Deployment
+🚀 Deployment
 
-Frontend: Vercel
+Frontend → Vercel
 
-Backend: Render
+Backend → Render
 
-Production API Integration
+Production API integration
 
 ✨ Key Features
 
@@ -104,28 +104,21 @@ Production API Integration
 
 🌍 Fully Deployed Production Version
 
-🔗 Live Frontend connected to Live Backend
-
 🏗 Architecture
-
 User → React Frontend → Axios API Call → Express Backend
 → Resume Parsing → Keyword Matching Engine → Score Generation
 → Response → UI Rendering
-This clearly separates frontend presentation from backend processing logic.
-
 📂 Project Structure
-
 SkillScan-ATS/
 │
 ├── client/        # React Frontend
 ├── server/        # Express Backend
 └── README.md
-
 🔗 API Endpoint
 
 POST /api/analyze
 
-Form Data Parameters
+Form Data
 
 resume (file)
 
@@ -136,24 +129,24 @@ experienceLevel (fresher / experienced)
 years (optional)
 
 📊 Example Response
-
 {
   "atsScore": 82,
   "message": "Strong match for the provided role.",
   "engine": "FitSense Engine v1.0"
 }
-
 🖥 Local Setup
 Clone Repository
-
 git clone https://github.com/your-username/SkillScan-ATS.git
 cd SkillScan-ATS
+Backend
+cd server
+npm install
+npm start
 
 Runs on:
 http://localhost:5000
 
 Frontend
-
 cd client
 npm install
 npm start
@@ -177,7 +170,3 @@ It includes backend logic, scoring system, and real hosting setup.
 
 Siddharth Sharma
 Full Stack Developer
-
-⭐ If You Found This Useful
-
-Give the repository a star and share feedback.
